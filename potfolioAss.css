@@ -1,0 +1,267 @@
+
+body { 
+    background-color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0; /* Added to remove default margin */
+    padding: 0; /* Added to remove default padding */
+}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  background-color: rgb(3, 144, 3);
+  color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: grey;
+  color: lime;
+    cursor: default;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+div.content {
+    color: white;
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+  }
+
+}
+
+section{
+    /* makes suer things are not overlapping */
+    padding-top: 4vh;
+    margin: 0 10rem; /*gives the picture some space away from the edges */
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+
+
+.icons{
+    position: relative; 
+    width: 40px; 
+    height: 40px; 
+    overflow: hidden; 
+    border-radius: 90%; 
+} 
+.icons img { 
+    width: 100%; 
+    height: auto; 
+}
+
+.secton-Pic { 
+    position: relative; 
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+    border: 3.5px solid rgb(1, 190, 1);
+    border-radius: 50%; 
+} 
+.secton-Pic img { 
+    width: 100%; 
+    height: auto;
+}
+.secton-Pic:hover{
+    border-color: lime;
+}
+
+/* ================================= */
+
+/* for TOP button */
+    #Top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: 2px solid rgb(215, 214, 214);
+  background-color: rgb(4, 204, 4);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 500px;
+}
+
+#Top:hover {
+  background-color: rgb(2, 159, 2);
+  
+}
+
+/* for TOP button -----------END */
+
+
+
+.logo-text:hover{
+    cursor: default;
+}
+
+.logo-text img { 
+    width: 25%; 
+    height: auto; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.details{
+    border: none;
+    border-width: 80px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.Title-t{
+    color: lime;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6
+}
+.Title{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
+}
+.Title-r{
+    color: lime;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
+}
+.section-text-p2{
+    color: lightblue;
+}
+p{
+    color: lightblue;
+}
+.name{
+    color: lime;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid white;
+    color: rgb(2, 154, 2);
+    background-color: rgb(199, 199, 199);
+}
+.btn:hover{
+    background-color: rgb(3, 221, 3);
+    color: white;
+}
+
+    .cheetS {
+        text-align: center;
+    }
+    .cheat-sheet {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .cheat-sheet-item {
+        border: 1px solid rgb(174, 174, 174);
+        padding: 10px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+    }
+
+    .skils-list{
+        color: lightblue;
+    }
+
+
+/* Progress bar-----------------START */
+
+    .progress-container {
+  width: 80%; /* Adjust as needed */
+  margin: 50px auto; /* Center the progress bar */
+}
+
+progress {
+  width: 100%;
+  height: 20px; /* Adjust the height as needed */
+  appearance: none;
+  border: 2px solid rgb(183, 181, 181);
+  background-color: #f0f0f0; /* Background color of the progress bar */
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f0f0f0; /* Background color of the progress bar */
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(5, 205, 5); /* Color of the progress bar */
+  border-top-right-radius: 10px; /*giives the corves of the green progress bar*/
+  border-bottom-right-radius: 10px;
+}
+
+.progress-title{
+    color: lime;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 10px;
+}
+
+/* Progress bar---------------END */
+
+
+
+    .footer{
+  border: none;
+    border-width: 80px;
+  border-top: 4px solid green;
+  border-bottom: 4px solid green;
+  padding-top: 40px;
+  padding-bottom: 40px;
+    }
